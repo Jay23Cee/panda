@@ -70,7 +70,93 @@ import pandas as pd
 
 ##create a DataFrame from Dict of Series
 
+#d = { 'one ':  pd.Series([1,2,3], index = [ 'a', 'b', 'c']),
+  #    'two ': pd.Series ([1,2,3,4], index = ['a', 'b', 'c', 'd'])}
+
+#df = pd.DataFrame(d)
+#print(df)
+
+                #// Column Selection
+#d = { 'one':  pd.Series([1,2,3], index = [ 'a', 'b', 'c']),
+ #     'two': pd.Series ([1,2,3,4], index = ['a', 'b', 'c', 'd'])}
+#df = pd.DataFrame(d)
+
+#print(df['one'])
 
 
 
+            #// Column Addition
+#d = { 'one':  pd.Series([1,2,3], index = [ 'a', 'b', 'c']),
+      #'two': pd.Series ([1,2,3,4], index = ['a', 'b', 'c', 'd'])}
+
+#df = pd.DataFrame(d)
+
+#adding a new column to an existing Datafraame object with column label passing
+
+#print("Adding a new column by passing as as Series : ")
+#df['three'] = pd.Series([10, 20, 30], index = ['a', 'b', 'c'])
+#print(df)
+
+
+#print('Adding a new Column')
+#df['four'] = df['one'] + df['three']
+
+#print(df)
+
+
+
+
+                #Column Deletion
+# Using the previous DataFrame, we will delete a column
+#using del function
+
+import pandas as pd
+
+d = {'one' : pd.Series([1,2,3], index = ['a', 'b', 'c']),
+     'two' : pd.Series([1,2,3,4], index = ['a', 'b', 'c', 'd'])
+  #  'three' : pd.Series([10,20,30], index = ['a', 'b', 'c'])
+        }
+
+#df = pd.DataFrame(d)
+
+#print("Our dataframe is:")
+#print(df)
+
+
+#using del function
+#print("Deleting the first column using DEL function:")
+#del df['one']
+#print(df)
+
+
+# using pop fucntion
+#print("Deleting another  using pop fucntion")
+#df.pop('two')
+#rint(df)
+
+#SELECTING BY LABEL ! ! 
+#print(df.loc['b'])
+
+
+#sELECTIon by integer location
+#print(df.iloc[2])
+
+
+#Slice Rows
+#print(df[2:4])
+
+
+#Addition of Rows
+print('addition')
+df= pd.DataFrame([[1,2] , [3,4]], columns = ['a' ,'b'])
+
+df2 = pd.DataFrame([[5,6], [7,3]], columns= ['a', 'b'])
+
+df = df.append(df2)
+print(df)
+
+
+#ROW  Deletion 
+print('Deletion')
+print(df.drop(0))
 
