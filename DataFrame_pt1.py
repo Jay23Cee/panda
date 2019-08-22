@@ -139,11 +139,11 @@ d = {'one' : pd.Series([1,2,3], index = ['a', 'b', 'c']),
 
 
 #sELECTIon by integer location
-#print(df.iloc[2])
+print(df.iloc[2])
 
 
 #Slice Rows
-#print(df[2:4])
+print(df[2:4])
 
 
 #Addition of Rows
