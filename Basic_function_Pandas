@@ -48,3 +48,13 @@ print(df)
 #Create a DataFrame
 #T returns the transpose of the dataframe. rows and column will interchange
 print(df.T)
+#Axes
+# Return the list of row axis labels and column axis labels
+print("Row axis labels and column axis labels are:")
+print(df.axes)
+
+#Dtype 
+#returns the data type of each column
+print("The data types of each columb are:")
+print(df.dtypes)
+
