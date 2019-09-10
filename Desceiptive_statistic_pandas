@@ -38,3 +38,4 @@ print(df.describe(include=['object']))
 #mean
 print("\n describe with include")
 print(df.describe(include='all'))
+Print()
