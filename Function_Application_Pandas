@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-##Adder function
+#Adder function
 #The adder function adds two numeric values as paramters and returns the sum.
 
 def adder(ele1, ele2):
