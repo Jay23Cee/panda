@@ -35,3 +35,15 @@ df2= pd.DataFrame(np.random.randn(7,3), columns=['col1', 'col2','col3'])
 
 df1 = df1.reindex_like(df2)
 print(df1)
+
+
+
+##filling reindexing
+df1 = pd.DataFrame(np.random.randn(6,3), columns['col1', 'col2', 'col3'])
+df2 = pd.DataFrame(np.random.randn(2,3), columns['col1', 'col2', 'col3'])
+
+#Padding NAN's'
+print(df2.reindex_like(df1))
+#Now fill the NAN with preceding Values
+print("Data Frame with Forward Fill:")
+print(df2.reindex_like(df1,method= 'ffill')) 
