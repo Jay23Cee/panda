@@ -47,3 +47,27 @@ print(df2.reindex_like(df1))
 #Now fill the NAN with preceding Values
 print("Data Frame with Forward Fill:")
 print(df2.reindex_like(df1,method= 'ffill')) 
+
+
+import pandas as pd
+import numpy as np
+
+df1 = pd.DataFrame(np.random.rand(6,3), columns =[ 'col1', 'col2', 'col3'])
+df2 = pd.DataFrame(np.random.rand(2,3), columns =[ 'col1', 'col2', 'col3'])
+
+#padding NAN's
+print(df2.reindex_like(df1)
+
+#now fill the naan's with preceding values
+print("Data Frame with forward fill:")
+print(df2.reindex_like(df1, method'ffill'))
+
+
+#limits on filling while reindexing
+
+print(df2.reindex_like(df1)
+
+# now fill the nan's w2ith preceding values
+
+print("Data  frame with forward fill limiting to 1:")
+print(df2.reindex_like(df1, method = 'ffill', limit=1)
