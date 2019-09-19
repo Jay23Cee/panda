@@ -49,8 +49,8 @@ print("Data Frame with Forward Fill:")
 print(df2.reindex_like(df1,method= 'ffill')) 
 
 
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 df1 = pd.DataFrame(np.random.rand(6,3), columns =[ 'col1', 'col2', 'col3'])
 df2 = pd.DataFrame(np.random.rand(2,3), columns =[ 'col1', 'col2', 'col3'])
