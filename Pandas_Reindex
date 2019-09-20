@@ -71,3 +71,11 @@ print(df2.reindex_like(df1)
 
 print("Data  frame with forward fill limiting to 1:")
 print(df2.reindex_like(df1, method = 'ffill', limit=1)
+
+
+
+df1 = pd.DataFrame(np.random.randn(6,3), columns= [ 'col1', 'col2', 'col3'])
+print(df1)
+
+print("After renaming the rows and columns:")
+print(df1.rename(columns={'col1' : 'c1' , 'col2':'c2'}, index= {0: 'apple', 1: 'banana', 2:'durian'}))
