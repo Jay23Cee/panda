@@ -23,3 +23,19 @@ df = pd.DataFrame ({
 
 for col in df:
   print(col)
+
+
+
+
+
+#Import pandas as pd 
+#Import numpy as np 
+ 
+df = pd.DataFrame(np.random.randn(4,3), columns =[‘col1’, ‘col2’, ‘col3’]) For key, value in df.iteritem(): 
+print(key,value) 
+ 
+For row_index, row in df.iterrows():
+ print(row_index,row) 
+ 
+For row in df.itertuples():
+ print(row) 
