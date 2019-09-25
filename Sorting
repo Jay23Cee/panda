@@ -1,0 +1,7 @@
+#sorting by lbel or actual value
+
+import pandas as pd
+import numpy as np
+
+unsorted_df= pd.DataFrame(np.random.randn(10,2), index=[1,4,6,2,3,5,9,8,7], columns=['col1','col2'])
+print(unsorted_df)
