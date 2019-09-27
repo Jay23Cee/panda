@@ -1,0 +1,36 @@
+import pandas as pd
+import numpy as np
+
+s= pd.Series(['Tom', 'wILLIAM rICK' , 'jOHN', 'Alert@t', '12334', 'SteveSmith'])
+print(s)
+
+#Lower
+print(s.str.lower())
+
+#Upper()
+print(s.str.upper())
+
+#Len()
+print(s.str.len())
+
+#strip()
+print(s)
+print("After Stripping"
+print(s.str.strip())
+
+#split(pattern)
+print('/n')
+print("Split patterns")
+print(s.str.split(' '))
+
+#Cat(sep=pattern)
+print('/n')
+print(s.str.cat(sep='_'))
+
+#get_dummies()
+print('/n')
+print(s.str.get_dummies())
+
+
+#Missing contains(), replace(A,B),  Repeat(value), count(patttern),  startswith(pattern), endwith(pattern), find(pattern)
+#Findall(pattern), swapcase(),  islower(), isupper(), isnumeric()
