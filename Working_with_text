@@ -34,3 +34,41 @@ print(s.str.get_dummies())
 
 #Missing contains(), replace(A,B),  Repeat(value), count(patttern),  startswith(pattern), endwith(pattern), find(pattern)
 #Findall(pattern), swapcase(),  islower(), isupper(), isnumeric()
+
+
+s = pd.Series(['Tom ', ' William Rick' , 'John', 'Alber@t'])
+print(s.str.contains(' '))
+
+print('/n')
+print('After replacing @ with $:')
+print(s.str.replace('@', '$')
+
+
+print("/n")
+print(s.str.repeat(2))
+
+
+print("/n")
+print(" Strings that start with 'T' : ")
+print(s.str.startwith('T'))
+
+
+print("/n")
+print("The number of 'm's in each string:")
+print(s.str.count('m))
+
+
+#endswith(pattern)
+print('/n')
+print("strings that end with 't'")
+print(s.str.endswith('t'))
+
+#find pattern
+print(s.str.find('e'))
+
+#find all pattern
+print(s.str.findall('e'))
+
+#
+#
+#missing swapcase() , islower(), isupper(),  is numeric
