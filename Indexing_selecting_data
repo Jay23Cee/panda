@@ -6,3 +6,10 @@ import numpy as np
 df= pd.DataFrame(np.random.randn(8,4), index= ['a', 'b', 'c', 'd', 'c', 'd', 'e', 'f', 'g', 'h'], columns=['A', 'B', 'C', 'D'] )
 
 print(df.loc[:,'A'])
+
+
+print( df.loc[:,['A','C']])
+
+print( df.loc[['a','b','f','h'],['A','C']])
+
+print( df.loc['a':'h']])
