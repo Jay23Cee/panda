@@ -9,3 +9,17 @@ print(s.pct_change())
 
 df = pd.DataFrame(np.random.randn(5,2))
 print(df.pct_change())
+
+
+
+#By default, the pct_change() operates on columns; if you want to apply the same row wise, then use axis=1() argument.
+#____________________________________
+#Covariance
+#Covariance is applied on series data. The Series object has a method cov to compute covariance between series objects. NA will be excluded automatically
+
+import pandas as pd
+import numpy as np
+
+s1= pd.Series(np.random.randn(10))
+s2 = pd.Series(np.random.randn(10))
+print(s1.cov(s2))
