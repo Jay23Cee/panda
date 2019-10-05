@@ -23,3 +23,30 @@ import numpy as np
 s1= pd.Series(np.random.randn(10))
 s2 = pd.Series(np.random.randn(10))
 print(s1.cov(s2))
+
+
+
+#------------------------------------
+frame = pd.DataFrame(np.random.randn(10,5), columns = ['a','b', 'c', 'd', 'e'])
+prit(frame['a'].cov(frame['b']
+print(frame.cov())
+
+
+#+___________________________
+#correlation
+#correlation shows the linear relationship between any two array of values(series).
+#There are multiple methods to compute the correlation like perason(default), spearma and kendall
+
+print(frame['a'].corr(frame['b']
+print(frame.corr() )
+
+
+#_____________________________
+#Data ranking
+
+s = pd.Series(np.random.np.random.randn(5), index=list('abcde')
+s['d'] = s['b'] # so teheres a tie
+
+print(s.rank() )
+
+
