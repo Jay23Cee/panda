@@ -1,0 +1,31 @@
+#Rolling() Function
+#this function can be applied on a series of data specify the window-nargument and apply the appropriate statistical function on top of it
+
+
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(10,4)
+index = pd.date_range('1/1/2000', periods = 10), columns = ['A', 'B', 'C', 'D'])
+
+print(df.rolling(window=3).mean()
+
+## note since the window size is 3, for the first two elements there are nulls and from third the 
+#value will be the average of the n, n-1, n-2 elements. 
+#thus we can also apply various function as mentioned above
+
+
+#_____________________
+
+#expanding() function
+
+df = pd.DataFrame(np.random.randn(10,4) , index = pd.date_range('1/1/2000', period =10), columns = ['A', 'B', 'C', 'D'])
+print(df.expanding(min_periods=3).mean()  )
+
+
+#___________________
+#ewm is applied on a series of data. specify any of the com, span halflife 
+#argument and apply the appropriate statistical function on top of it . it assigns the weights exponentially
+
+df = pd.DataFrame(np.random.randn(10,4), index = pd.date_range(1/1/2000', periods=10), columns = ['A', 'B', 'C', 'D'])
+print (df.ewm(com=0.5).mean() )
