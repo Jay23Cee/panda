@@ -1,0 +1,28 @@
+#Handle missing values (SAY NA /or NaN). Using pandas
+
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(5,3) , index = ['a', 'c', 'e', 'f', 'h'], columns= ['one', two', three'])
+
+df = df.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'h'])
+print(df)
+
+
+print(df['one'].insull())
+
+print( df['one'].notnull())
+
+ #calculating with missing data
+ 
+ print(df['one'].sum())
+ 
+ #ex2
+ 
+ df.pd.DataFrame(index=[0,1,2,3,4,5], columns = ['one', 'two'])
+ print(df['one'].sum()
+ 
+ #replace Nanwith a scalar value
+ print(df)
+ print("nan replace  with '0':")
+ print(df.fillna(0))
