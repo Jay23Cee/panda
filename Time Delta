@@ -1,0 +1,9 @@
+#Time delta
+import pandas as pd
+
+print(pd.Timedelta('2 days 2 hours 15 minutes 30 seconds'))
+
+
+print(pd.Timedelta(6, unit='h'))
+
+print(pd.Timedelta(days=2))
