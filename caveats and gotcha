@@ -1,0 +1,14 @@
+#Caveats means warning and gotcha means an unseen problem
+
+import pandas as pd
+
+if pd.Series([False, True, False]):
+	print("I am True")
+	
+	
+	
+if pd.Series([False, True, False]).any():
+	print("I am any")
+
+print(pd.Series([True]).bool())
+		
